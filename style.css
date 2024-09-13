@@ -5,12 +5,13 @@ body {
     background-image: url('https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100');
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
-    background-position-y: -150px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     overflow-y: hidden;
     margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @keyframes fade-in {
@@ -160,4 +161,40 @@ body {
     padding-top: 10px;
     color: rgba(255, 255, 255, 0.5);
     animation: fade-in 0.5s 0.2s backwards;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1299px) {
+    .header {
+        width: 500px;
+        flex-direction: column;
+    }
+    .footer {
+        width: 500px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .input {
+        width: 90%;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 499px) {
+    .header {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
 }
